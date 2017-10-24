@@ -1,89 +1,84 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Guia para instalação do ITK/VTK</title>
-</head>
-<body>
+	<head>
+		<title>Guia para instalação do ITK/VTK</title>
+	</head>
+	
+	<body>
 
-<h1>Instalação:</h1>
-<p>
+		<h1>Instalação:</h1>
+		<p>
 
-Instale o VTK antes do SLicer!
-<br>
-->instalado CMAKE
-sudo apt-get install cmake
-<br>
--> instalado openGL
-sudo apt-get install freeglut3-dev
-<br>
+		Instale o VTK antes do SLicer!
+		<br>
+		->instalado CMAKE
+		sudo apt-get install cmake
+		<br>
+		-> instalado openGL
+		sudo apt-get install freeglut3-dev
+		<br>
 
--> cria-se a pasta general_source
-mkdir general_source
-cd general_source
-<br>
--> na pasta general_source cria-se a pasta VTK
-mkdir VTK
-cd VTK
-<br>
--> criando as pastas de source e build
-	mkdir source 
-	mkdir build
-<br>
--> na pasta de source clonando o vtk 7.1.1
-git clone git://vtk.org/VTK.git
-ou baixar os arquivos do site 
-<br>
--> na pasta de build usando cmake cria os arquivos de build
-cmake ~/VTK/source/
-ou usa o cmake gui
-<br>
+		-> cria-se a pasta general_source
+		mkdir general_source
+		cd general_source
+		<br>
+		-> na pasta general_source cria-se a pasta VTK
+		mkdir VTK
+		cd VTK
+		<br>
+		-> criando as pastas de source e build
+			mkdir source 
+			mkdir build
+		<br>
+		-> na pasta de source clonando o vtk 7.1.1
+		git clone git://vtk.org/VTK.git
+		ou baixar os arquivos do site 
+		<br>
+		-> na pasta de build usando cmake cria os arquivos de build
+		cmake ~/VTK/source/
+		ou usa o cmake gui
+		<br>
 
--> No Cmake, limpa o cache;
-acha a pasta ~/vtk/source e ~/vtk/build
-usa configure e generate
-<br>
--> na pasta build dar make
-make [-j3]
-<br>
--> na pasta general_source cria-se a pasta ITK
-mkdir ITK
-cd ITK
-<br>
--> criando as pastas de source e build
-mkdir source 
-mkdir build
-<br>
--> na pasta de source clonando o itk 4.12.1
-ou baixando os arquivos do site 
-<br>
--> na pasta de build usando cmake cria os arquivos de build
-cmake ~/VTK/source/
-ou usa o cmake gui
-<br>
--> No Cmake, limpa o cache;
-acha a pasta ~/itk/source e ~/itk/build
-usa configure e Adiciona as variáveis:
-====> Module_ITKVtkGlue                ON
-====> VTK_DIR                          /opt/compilation/paraview-git_build/VTK/
-configure novamente e generate
-<br>
--> na pasta build dar make
-make [-j3]
-<br>
--> na pasta build dar make install
-sudo make install 
-<br>
---> instalando slicer
-<br>
---> instalar usando o site: https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions#Ubuntu
-<br>
+		-> No Cmake, limpa o cache;
+		acha a pasta ~/vtk/source e ~/vtk/build
+		usa configure e generate
+		<br>
+		-> na pasta build dar make
+		make [-j3]
+		<br>
+		-> na pasta general_source cria-se a pasta ITK
+		mkdir ITK
+		cd ITK
+		<br>
+		-> criando as pastas de source e build
+		mkdir source 
+		mkdir build
+		<br>
+		-> na pasta de source clonando o itk 4.12.1
+		ou baixando os arquivos do site 
+		<br>
+		-> na pasta de build usando cmake cria os arquivos de build
+		cmake ~/VTK/source/
+		ou usa o cmake gui
+		<br>
+		-> No Cmake, limpa o cache;
+		acha a pasta ~/itk/source e ~/itk/build
+		usa configure e Adiciona as variáveis:
+		====> Module_ITKVtkGlue                ON
+		====> VTK_DIR                          /opt/compilation/paraview-git_build/VTK/
+		configure novamente e generate
+		<br>
+		-> na pasta build dar make
+		make [-j3]
+		<br>
+		-> na pasta build dar make install
+		sudo make install 
+		<br>
+		--> instalando slicer
+		<br>
+		--> instalar usando o site: https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions#Ubuntu
+		<br>
 
-</p>
-
-
-
-
-
-
-</body>
+		</p>
+	</body>
 </html> 
