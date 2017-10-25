@@ -96,7 +96,8 @@ Use configure e Adiciona as variáveis:
 <p>
 	make [-j4]
 </p>
-## Na pasta build dar make install
+
+## Na pasta build
 <p>
 	sudo make install 
 </p>
