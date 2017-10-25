@@ -7,7 +7,7 @@
 
 ## Instalado CMAKE
 <p>
-	sudo apt-get install cmake
+	$ sudo apt-get install cmake
 </p>
 
 ## Instalado openGL
