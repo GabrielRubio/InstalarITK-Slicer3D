@@ -54,9 +54,9 @@ Vá para a pasta
 </p>
 
 ## Na pasta build dar make
-	O numero de cores que seu processador tem deve ser colocad nessa etapa, o nosso possui 4 cores então [-j4].
+	O numero de núcleos que seu processador tem deve ser colocado nessa etapa, o este possui 4 cores então [-j4].
 <p>
-	make [-j4] 
+	$ make [-j4] 
 </p>
 
 ## Na pasta general_source cria-se a pasta ITK
@@ -76,9 +76,11 @@ Vá para a pasta
 
 ## Na pasta de build usando cmake cria os arquivos de build
 <p>
-	cmake ~/VTK/source/
+	$ cmake ~/VTK/source/
 
-	ou use o cmake gui
+	ou use o 
+
+	$ cmake gui
 </p>
 
 ## No Cmake, limpa o cache;
@@ -94,12 +96,12 @@ Use configure e Adiciona as variáveis:
 
 ## Na pasta build dar make
 <p>
-	make [-j4]
+	$ make [-j4]
 </p>
 
 ## Na pasta build
 <p>
-	sudo make install 
+	$ sudo make install 
 </p>
 
 ## [Instalar 3D Slicer](https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions#Ubuntu)
