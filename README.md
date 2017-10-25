@@ -12,19 +12,19 @@
 
 ## Instalado openGL
 <p>
-	sudo apt-get install freeglut3-dev
+	$ sudo apt-get install freeglut3-dev
 </p>
 
 ## Cria-se a pasta general_source
 <p>
-	mkdir general_source
-	cd general_source
+	$ mkdir general_source
+	$ cd general_source
 </p>
 
 ## Na pasta general_source cria-se a pasta VTK
 <p>
-	mkdir VTK
-	cd VTK
+	$ mkdir VTK
+	$ cd VTK
 </p>
 
 ## Criando as pastas de source e build
@@ -35,7 +35,7 @@
 
 ## Na pasta de source clonando o vtk 7.1.1
 <p>
-	git clone git://vtk.org/VTK.git
+	$ git clone git://vtk.org/VTK.git
 </p>
 Ou baixar os arquivos do site 
 
@@ -43,7 +43,7 @@ Ou baixar os arquivos do site
 <p>
 	cmake ~/VTK/source/
 	ou
-	cmake gui
+	$ cmake gui
 </p>
 
 ## No Cmake, limpa o cache;
