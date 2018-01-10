@@ -1,9 +1,9 @@
 # Instalação:
 
 ##  Instalar nessa ordem:
-	* VTK
-	* ITK
-	* 3D Slicer
+	1 VTK
+	2 ITK
+	3 3D Slicer
 
 ## Instalado CMAKE
 <p>
@@ -29,7 +29,7 @@
 
 ## Criando as pastas de source e build
 <p>
-	mkdir source 
+	mkdir source
 	mkdir build
 </p>
 
@@ -37,7 +37,7 @@
 <p>
 	$ git clone git://vtk.org/VTK.git
 </p>
-Ou baixar os arquivos do site 
+Ou baixar os arquivos do site
 
 ## Na pasta de build usando cmake cria os arquivos de build
 <p>
@@ -47,7 +47,7 @@ Ou baixar os arquivos do site
 </p>
 
 ## No Cmake, limpa o cache;
-Vá para a pasta 
+Vá para a pasta
 <p>
 	~/vtk/source e ~/vtk/build
 	use configure e generate
@@ -56,7 +56,7 @@ Vá para a pasta
 ## Na pasta build dar make
 	O numero de núcleos que seu processador tem deve ser colocado nessa etapa, o este possui 4 cores então [-j4].
 <p>
-	$ make [-j4] 
+	$ make [-j4]
 </p>
 
 ## Na pasta general_source cria-se a pasta ITK
@@ -67,18 +67,18 @@ Vá para a pasta
 
 ## Criando as pastas de source e build
 <p>
-	mkdir source 
+	mkdir source
 	mkdir build
 </p>
 
 ## Na pasta de source clonando o itk 4.12.1
-* ou baixando os arquivos do site 
+* ou baixando os arquivos do site
 
 ## Na pasta de build usando cmake cria os arquivos de build
 <p>
 	$ cmake ~/VTK/source/
 
-	ou use o 
+	ou use o
 
 	$ cmake gui
 </p>
@@ -101,8 +101,7 @@ Use configure e Adiciona as variáveis:
 
 ## Na pasta build
 <p>
-	$ sudo make install 
+	$ sudo make install
 </p>
 
 ## [Instalar 3D Slicer](https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions#Ubuntu)
-
