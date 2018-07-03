@@ -106,3 +106,11 @@ Use configure e Adiciona as variáveis:
 
 ## [Instalar 3D Slicer](https://www.slicer.org/wiki/Documentation/Nightly/Developers/Build_Instructions#Ubuntu)
 
+## Instalar a ultima versão (3.11.4) do [cmake](https://cmake.org/download/)
+
+Dica: pode ser usado alias para facilitar o uso do cmake
+
+alias cmake11='/path/to/cmake-3.11.4-Linux-x86_64/bin/cmake'
+
+## Instalar a ultima versão (5.11.0) do [qt](https://www.wikihow.com/Install-Qt-SDK-on-Ubuntu-Linux)
+
