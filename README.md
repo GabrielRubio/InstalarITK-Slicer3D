@@ -35,7 +35,7 @@
 
 ## Na pasta de source clonando o vtk 7.1.1
 <p>
-	$ git clone git://vtk.org/VTK.git
+	$ git clone https://gitlab.kitware.com/vtk/vtk.git VTK
 </p>
 Ou baixar os arquivos do site
 
